@@ -1,0 +1,41 @@
+{
+    "protocol": "http",
+    "port": 3000,
+    "stubs": [
+      {
+        "predicates": [
+          {
+            "inject": "<%- stringify(filename, 'quiz-inject.js') %>"
+          }
+        ],
+        "responses": [
+          {
+            "is": {
+              "statusCode": 201,
+              "header" : {
+                "Content-Type" : "application/json"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "predicates": [
+          {
+            "inject": "<%- stringify(filename, 'quiz2-inject.js') %>"
+          }
+        ],
+        "responses": [
+          {
+            "is": {
+              "statusCode": 401,
+              "header" : {
+                "Content-Type" : "application/json"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

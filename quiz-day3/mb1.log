@@ -1,0 +1,13 @@
+{"message":"[mb:2525] Running with --allowInjection set. See http://localhost:2525/docs/security for security info","level":"warn","timestamp":"2020-04-08T05:20:59.647Z"}
+{"message":"[mb:2525] mountebank v2.2.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-04-08T05:20:59.660Z"}
+{"message":"[mb:2525] PUT /imposters","level":"info","timestamp":"2020-04-08T05:20:59.668Z"}
+{"message":"[http:3000] Open for business...","level":"info","timestamp":"2020-04-08T05:20:59.694Z"}
+{"message":"[http:3000] ::1:49812 => POST /items","level":"info","timestamp":"2020-04-08T05:21:03.741Z"}
+{"message":"[http:3000] 0","level":"info","timestamp":"2020-04-08T05:21:03.755Z"}
+{"message":"[http:3000] ::1:49821 => POST /items","level":"info","timestamp":"2020-04-08T05:21:05.314Z"}
+{"message":"[http:3000] 0","level":"info","timestamp":"2020-04-08T05:21:05.316Z"}
+{"message":"[http:3000] ::1:49824 => POST /items","level":"info","timestamp":"2020-04-08T05:21:10.107Z"}
+{"message":"[http:3000] 0","level":"info","timestamp":"2020-04-08T05:21:10.108Z"}
+{"message":"[http:3000] ::1:49836 => POST /items","level":"info","timestamp":"2020-04-08T05:22:30.717Z"}
+{"message":"[http:3000] 0","level":"info","timestamp":"2020-04-08T05:22:30.718Z"}
+{"message":"[mb:2525] Adios - see you soon?","level":"info","timestamp":"2020-04-08T05:22:33.076Z"}
