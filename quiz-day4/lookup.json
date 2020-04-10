@@ -1,0 +1,36 @@
+{
+  "protocol": "http",
+  "port": 3000,
+  "stubs": [
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": "${row}['statusCode']",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "message": "${row}['name']",
+              "reqId": "${row}['reqId']"
+            }
+          },
+          "_behaviors": {
+            "lookup": [
+              {
+                "key": {
+                  "from": "body",
+                  "using": { "method": "jsonpath", "selector": "$..name" }
+                },
+                "fromDataSource": {
+                  "csv": { "path": "toy.csv", "keyColumn": "name" }
+                },
+                "into": "${row}"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
